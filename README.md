@@ -36,7 +36,9 @@ in the properties, and add it to the environment variables
 After doing that, you can check whether mongosh is being recognized
 by the command prompt:
 
-    mongosh
+```
+mongosh
+```
 
 # 1. MongoDB Crash Course
 
