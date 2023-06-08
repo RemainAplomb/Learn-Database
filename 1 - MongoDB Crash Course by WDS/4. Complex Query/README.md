@@ -1,6 +1,6 @@
-## Complex Query
+# Complex Query
 
-### Dollar notation for getting entries for certain field values
+## Dollar notation for getting entries for certain field values
 
 For more complex queries, we can use the dollar notation.
 
@@ -19,7 +19,7 @@ For more details, go here:
 
 https://www.mongodb.com/docs/manual/reference/operator
 
-### Dollar notation for query comparison
+## Dollar notation for query comparison
 
 If you want to do query comparison,
 you can also use the dollar notation. 
@@ -34,7 +34,7 @@ For more details, you can go to the documentation:
 
     https://www.mongodb.com/docs/manual/reference/operator/query-comparison/
 
-### Get Entries for multiple field values
+## Get Entries for multiple field values
 
 To have more flexibility in looking for entries with certain field
 values, we can do this:
@@ -52,7 +52,7 @@ Otherwise, you can also use not in, here's a sample code snippet:
 db.users.find( { name: { $nin : [ "Jill", "Sally" ] } })
 ```
 
-### Get Entries where certain fieldnames exist
+## Get Entries where certain fieldnames exist
 
 To get entries that holds certain fieldnames, do this:
 
@@ -63,9 +63,9 @@ db.users.find({ age: { $exists: true } })
 Basically, if the key exist in a document, it will take it.
 Even if that fieldname has null value, it will still take it.
 
-## Combining Queries
+# Combining Queries
 
-### Entries with values in a certain range
+## Entries with values in a certain range
 
 If you want to get entries that where the value of a certain field
 falls within your specified range, you can do this:
@@ -85,7 +85,7 @@ db.users.find({ age: { $gte: 15, $lte: 40 } , name: "Sally" })
 ```
 
 
-### Dollar notation with logical operator
+## Dollar notation with logical operator
 
 To be more readable, we can opt to use "$and".
 Here's the command's structure:
@@ -104,7 +104,7 @@ and here's an or operator:
 db.users.find({ $or : [ { age: 19}, { name: "Kyle" }] })
 ```
 
-### Nesting Condition with logical operator
+## Nesting Condition with logical operator
 
 You can also further nest the conditions that you want 
 into the query, here's a sample command:
@@ -119,7 +119,7 @@ Here's another example with not operator:
 db.users.find({ age: { $not : { $gte: 15, $lte: 40 } } })
 ```
 
-### More examples
+## More examples
 
 Let's start with:
 
@@ -134,7 +134,7 @@ To do that, we will use "$expr"
 db.users.find({ $expr: { $gt: ["$debt", "$balance" ] } })
 ```
 
-### More Find examples
+## More Find examples
 
 You can also nest the field names like this:
 
