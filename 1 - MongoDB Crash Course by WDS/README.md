@@ -1,17 +1,8 @@
-# Learn-MongoDB
-
-## Brief Description of the repository
-
-    Environment:
-        - MongoDB 6.0 Windows
-        - Mongosh
-    Github: https://github.com/RemainAplomb
-
-    This repository will contain my files for learning MongoDB
+# MongoDB Crash Course
 
 ## Installation
 
-## MongoDB
+### MongoDB
 
 To get started, install MongoDB from this link:
 
@@ -19,7 +10,7 @@ To get started, install MongoDB from this link:
 
 Choose the installation that fits your operating system
 
-## Mongosh
+### Mongosh
 
 After installing MongoDB, you will need Mongosh.
 You can download it here:
@@ -38,11 +29,30 @@ by the command prompt:
 
     mongosh
 
-# 1. MongoDB Crash Course
-
 ## Brief Description
 
     Folder name: 1 - MongoDB Crash Course by WDS
     Tutorial by: Web Dev Simplified
     Github: https://github.com/WebDevSimplified
     Retrieved from: https://www.youtube.com/watch?v=ofme2o29ngU
+
+## Structure
+
+    ⏱️ Timestamps:
+        00:00 - Introduction
+        01:23 - Basic Commands
+        04:18 - Insert Commands
+        08:50 - Basic Query Commands
+        13:00 - Complex Query Commands
+        23:00 - Update Commands
+        28:55  - Delete Commands
+    
+    Folders:
+        1. Basic Commands
+        2. Insert Commands
+        3. Basic Query
+        4. Complex Query
+        5. Update Commands
+    
+    Each folder will contain the note that 
+    correspond with certain topics
