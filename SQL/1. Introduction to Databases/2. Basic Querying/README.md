@@ -89,27 +89,3 @@ WHERE id = 1;
 In the example above, we delete the record from the customers table where the id is 1.
 
 These DML statements provide powerful functionality to manipulate and retrieve data in SQL. Practice using these statements with different scenarios to become more comfortable with them.
-
-## Data Definition Language (DDL)
-
-### Create
-
-### Alter
-
-### Drop
-
-## Data Control Language (DCL)
-
-### Grant
-
-### Revoke
-
-## Transaction Control Language (TCL)
-
-### Begin
-
-### Tran
-
-### Commit
-
-### Rollback
