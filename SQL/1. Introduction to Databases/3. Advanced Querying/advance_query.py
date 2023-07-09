@@ -65,27 +65,27 @@ if __name__ == "__main__":
     # Create table query
     do_create_table = False
     if do_create_table:
-        table_name = "orders"
-        columns = "order_id INT PRIMARY KEY, customer_id INT, order_date DATE"
+        table_name = "wishes"
+        columns = "wish_id INT PRIMARY KEY, customer_id INT, wish_date DATE"
         advance_queries.create_table(table_name, columns)
 
     # Alter table query
     do_alter_table = False
     if do_alter_table:
-        table_name = "orders"
+        table_name = "wishes"
         alteration = "ADD COLUMN total_amount FLOAT"
         advance_queries.alter_table(table_name, alteration)
 
     # Drop table query
     do_drop_table = False
     if do_drop_table:
-        table_name = "orders"
+        table_name = "wishes"
         advance_queries.drop_table(table_name)
 
     # Grant privileges query
     do_grant_privileges = False
     if do_grant_privileges:
-        table_name = "orders"
+        table_name = "wishes"
         privileges = "SELECT, INSERT"
         user = "user1"
         advance_queries.grant_privileges(table_name, privileges, user)
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     # Revoke privileges query
     do_revoke_privileges = False
     if do_revoke_privileges:
-        table_name = "orders"
+        table_name = "wishes"
         privileges = "SELECT, INSERT"
         user = "user1"
         advance_queries.revoke_privileges(table_name, privileges, user)
